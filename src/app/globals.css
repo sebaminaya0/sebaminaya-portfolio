@@ -1,26 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  
+  /* Colores de resaltador */
+  --highlight-yellow: #FFE000;
+  --highlight-pink: #FF006E;
+  --highlight-blue: #00D9FF;
+  --highlight-green: #00FF88;
+  --highlight-orange: #FF6B00;
+  
+  /* Tipografías */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Variables de tema para Tailwind */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+/* Utilidades personalizadas */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.text-highlight-yellow { color: var(--highlight-yellow); }
+.text-highlight-pink { color: var(--highlight-pink); }
+.text-highlight-blue { color: var(--highlight-blue); }
+.text-highlight-green { color: var(--highlight-green); }
+.text-highlight-orange { color: var(--highlight-orange); }
+
+.bg-highlight-yellow { background-color: var(--highlight-yellow); }
+.bg-highlight-pink { background-color: var(--highlight-pink); }
+.bg-highlight-blue { background-color: var(--highlight-blue); }
+.bg-highlight-green { background-color: var(--highlight-green); }
+.bg-highlight-orange { background-color: var(--highlight-orange); }
+
+.border-highlight-yellow { border-color: var(--highlight-yellow); }
+.border-highlight-pink { border-color: var(--highlight-pink); }
+.border-highlight-blue { border-color: var(--highlight-blue); }
+.border-highlight-green { border-color: var(--highlight-green); }
+.border-highlight-orange { border-color: var(--highlight-orange); }
+
+/* Animaciones suaves */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* ========================
+   Dark Mode
+   ======================== */
+[data-theme="dark"] {
+  --background: #0f0f0f;
+  --foreground: #ffffff;
+  color-scheme: dark;
+}
+
+[data-theme="dark"] body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Surface backgrounds */
+[data-theme="dark"] .bg-white {
+  background-color: #1a1a1a !important;
+}
+
+[data-theme="dark"] .bg-gray-100 {
+  background-color: #262626 !important;
+}
+
+/* Borders */
+[data-theme="dark"] .border-black {
+  border-color: #3a3a3a !important;
+}
+
+/* Text */
+[data-theme="dark"] .text-black {
+  color: #ffffff;
+}
+
+/* Preserve black text on bright highlight backgrounds for readability */
+[data-theme="dark"] .bg-highlight-yellow .text-black,
+[data-theme="dark"] .bg-highlight-green .text-black,
+[data-theme="dark"] .bg-highlight-blue .text-black {
+  color: #000000;
+}
+
+/* Gray text shades */
+[data-theme="dark"] .text-gray-700 { color: #d1d5db; }
+[data-theme="dark"] .text-gray-600 { color: #9ca3af; }
+[data-theme="dark"] .text-gray-500 { color: #6b7280; }
+
+/* bg-black elements (social icon buttons) */
+[data-theme="dark"] .bg-black {
+  background-color: #2a2a2a;
+}
+
+/* Outline buttons: on hover, flip to white bg + black text */
+[data-theme="dark"] .hover\:bg-black:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+[data-theme="dark"] .hover\:text-white:hover {
+  color: #000000 !important;
 }
