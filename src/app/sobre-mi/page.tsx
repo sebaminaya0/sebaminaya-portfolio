@@ -30,7 +30,7 @@ export default function SobreMi() {
               <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
                 <span className="text-black">Hola, soy</span>
                 <br />
-                <span className="text-highlight-pink">Sebastián Miñaya</span>
+                <span className="text-highlight-blue">Sebastián Miñaya</span>
               </h1>
               
               <p className="text-xl text-gray-700 mb-6 leading-relaxed">
@@ -53,7 +53,7 @@ export default function SobreMi() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  highlightColor="pink"
+                  highlightColor="blue"
                   onClick={() => router.push('/contacto')}
                 >
                   Contactarme
@@ -77,9 +77,9 @@ export default function SobreMi() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <div className="bg-highlight-pink rounded-lg p-8 text-center">
+              <div className="bg-highlight-blue rounded-lg p-8 text-center">
                 <div className="w-32 h-32 mx-auto mb-4 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-4xl font-bold text-highlight-pink">SM</span>
+                  <span className="text-4xl font-bold text-highlight-blue">SM</span>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">Sebastián Miñaya</h3>
                 <p className="text-white/90">Desarrollador & Analista de Datos</p>
@@ -100,7 +100,7 @@ export default function SobreMi() {
             className="text-center mb-16"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-              Mis <span className="text-highlight-yellow">Habilidades</span>
+              Mis <span className="text-highlight-blue">Habilidades</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Tecnologías y herramientas que domino para crear soluciones excepcionales
@@ -159,13 +159,13 @@ export default function SobreMi() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="relative border-l-4 border-highlight-yellow pl-8 pb-12 last:pb-0"
+                className="relative border-l-4 border-highlight-blue pl-8 pb-12 last:pb-0"
               >
-                <div className="absolute left-0 top-0 w-4 h-4 bg-highlight-yellow rounded-full -translate-x-1/2"></div>
+                <div className="absolute left-0 top-0 w-4 h-4 bg-highlight-blue rounded-full -translate-x-1/2"></div>
                 
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                   <h3 className="font-heading text-xl font-bold">{job.position}</h3>
-                  <span className="text-highlight-pink font-medium">{job.period}</span>
+                  <span className="text-highlight-blue font-medium">{job.period}</span>
                 </div>
                 
                 <p className="text-lg text-gray-700 mb-2">{job.company}</p>
@@ -198,7 +198,7 @@ export default function SobreMi() {
             className="text-center mb-16"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-              <span className="text-highlight-green">Certificaciones</span>
+              <span className="text-highlight-blue">Certificaciones</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Certificaciones que validan mi experiencia y conocimientos
@@ -215,13 +215,13 @@ export default function SobreMi() {
                 viewport={{ once: true }}
                 className="bg-white border-2 border-black rounded-lg p-6 text-center"
               >
-                <div className="w-16 h-16 mx-auto mb-4 bg-highlight-green rounded-full flex items-center justify-center">
+                <div className="w-16 h-16 mx-auto mb-4 bg-highlight-blue rounded-full flex items-center justify-center">
                   <Brain className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-heading text-lg font-bold mb-2">{cert.name}</h3>
                 <p className="text-gray-700 mb-1">{cert.issuer}</p>
                 <p className="text-sm text-gray-600">{cert.year}</p>
-                <p className="text-xs text-highlight-green mt-2">ID: {cert.credential}</p>
+                <p className="text-xs text-highlight-blue mt-2">ID: {cert.credential}</p>
               </motion.div>
             ))}
           </div>
@@ -229,7 +229,7 @@ export default function SobreMi() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 border-t-2 border-black bg-highlight-orange">
+      <section className="py-20 border-t-2 border-black bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -240,12 +240,12 @@ export default function SobreMi() {
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-white">
               ¿Listo para trabajar juntos?
             </h2>
-            <p className="text-xl text-white mb-8">
+            <p className="text-xl text-gray-300 mb-8">
               Estoy disponible para proyectos interesantes y desafíos técnicos
             </p>
             <Button
               size="lg"
-              highlightColor="pink"
+              highlightColor="blue"
               onClick={() => router.push('/contacto')}
             >
               Iniciar Conversación

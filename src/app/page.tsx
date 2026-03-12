@@ -37,7 +37,7 @@ export default function Home() {
               <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6">
                 <span className="text-black">Desarrollador &</span>
                 <br />
-                <span className="text-highlight-yellow">Analista de Datos</span>
+                <span className="text-highlight-blue">Analista de Datos</span>
               </h1>
               
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
@@ -101,7 +101,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-              Mis <span className="text-highlight-orange">Servicios</span>
+              Mis <span className="text-highlight-blue">Servicios</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Soluciones integrales para tus necesidades de desarrollo y análisis de datos
@@ -143,7 +143,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-              Proyectos <span className="text-highlight-green">Destacados</span>
+              Proyectos <span className="text-highlight-blue">Destacados</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Casos de éxito que demuestran mi experiencia en desarrollo y análisis de datos
@@ -182,7 +182,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 border-t-2 border-black bg-highlight-yellow">
+      <section className="py-20 border-t-2 border-black bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -190,15 +190,15 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-black">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-white">
               ¿Listo para transformar tus datos en resultados?
             </h2>
-            <p className="text-xl text-black mb-8">
+            <p className="text-xl text-gray-300 mb-8">
               Hablemos sobre tu proyecto y cómo puedo ayudarte a alcanzar tus objetivos
             </p>
             <Button
               size="lg"
-              highlightColor="pink"
+              highlightColor="blue"
               onClick={() => router.push('/contacto')}
             >
               Contactar Ahora

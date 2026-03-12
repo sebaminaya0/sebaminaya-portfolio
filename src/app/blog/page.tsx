@@ -18,7 +18,7 @@ export default function Blog() {
             className="text-center"
           >
             <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-highlight-pink">Blog</span>
+              <span className="text-highlight-blue">Blog</span>
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Reflexiones y guías prácticas sobre desarrollo web, análisis de datos y machine learning.
@@ -49,7 +49,7 @@ export default function Blog() {
                         <CalendarDays className="w-4 h-4" />
                         <time dateTime={post.date}>{post.date}</time>
                       </div>
-                      <h2 className="font-heading text-xl font-bold mb-3 group-hover:text-highlight-pink transition-colors">
+                      <h2 className="font-heading text-xl font-bold mb-3 group-hover:text-highlight-blue transition-colors">
                         {post.title}
                       </h2>
                       <p className="text-gray-700 mb-4 flex-1">{post.excerpt}</p>

@@ -18,10 +18,10 @@ export const SkillBadge: React.FC<SkillBadgeProps> = ({
   className,
 }) => {
   const colorClasses = {
-    yellow: 'bg-highlight-yellow text-black hover:bg-highlight-yellow/90',
+    yellow: 'bg-highlight-yellow text-white hover:bg-highlight-yellow/90',
     pink: 'bg-highlight-pink text-white hover:bg-highlight-pink/90',
-    blue: 'bg-highlight-blue text-black hover:bg-highlight-blue/90',
-    green: 'bg-highlight-green text-black hover:bg-highlight-green/90',
+    blue: 'bg-highlight-blue text-white hover:bg-highlight-blue/90',
+    green: 'bg-highlight-green text-white hover:bg-highlight-green/90',
     orange: 'bg-highlight-orange text-white hover:bg-highlight-orange/90',
   };
 

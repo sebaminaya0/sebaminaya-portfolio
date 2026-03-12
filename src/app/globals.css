@@ -6,11 +6,11 @@
   --foreground: #000000;
   
   /* Colores de resaltador */
-  --highlight-yellow: #FFE000;
-  --highlight-pink: #FF006E;
-  --highlight-blue: #00D9FF;
-  --highlight-green: #00FF88;
-  --highlight-orange: #FF6B00;
+  --highlight-yellow: #0066FF;
+  --highlight-pink: #0066FF;
+  --highlight-blue: #0066FF;
+  --highlight-green: #0066FF;
+  --highlight-orange: #0066FF;
   
   /* Tipografías */
   --font-heading: 'Space Grotesk', sans-serif;
@@ -86,13 +86,6 @@ body {
 /* Text */
 [data-theme="dark"] .text-black {
   color: #ffffff;
-}
-
-/* Preserve black text on bright highlight backgrounds for readability */
-[data-theme="dark"] .bg-highlight-yellow .text-black,
-[data-theme="dark"] .bg-highlight-green .text-black,
-[data-theme="dark"] .bg-highlight-blue .text-black {
-  color: #000000;
 }
 
 /* Gray text shades */

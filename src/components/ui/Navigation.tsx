@@ -101,7 +101,7 @@ export const Navigation: React.FC<NavigationProps> = React.memo(({ className }) 
             animate={{ opacity: 1, x: 0 }}
             className="flex-shrink-0"
           >
-            <Link href="/" className="font-heading text-2xl font-bold text-highlight-yellow">
+            <Link href="/" className="font-heading text-2xl font-bold text-highlight-blue">
               SM
             </Link>
           </motion.div>
@@ -117,8 +117,8 @@ export const Navigation: React.FC<NavigationProps> = React.memo(({ className }) 
                     className={cn(
                       'font-medium transition-colors',
                       isActive
-                        ? 'text-highlight-yellow border-b-2 border-highlight-yellow pb-0.5'
-                        : 'hover:text-highlight-yellow'
+                        ? 'text-highlight-blue border-b-2 border-highlight-blue pb-0.5'
+                        : 'hover:text-highlight-blue'
                     )}
                   >
                     {item.label}
@@ -138,7 +138,7 @@ export const Navigation: React.FC<NavigationProps> = React.memo(({ className }) 
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-highlight-yellow transition-colors"
+                  className="text-gray-600 hover:text-highlight-blue transition-colors"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   aria-label={social.label}
@@ -190,10 +190,10 @@ export const Navigation: React.FC<NavigationProps> = React.memo(({ className }) 
                     className={cn(
                       'block w-full text-left px-3 py-2 font-medium transition-colors',
                       isActive
-                        ? 'text-highlight-yellow bg-highlight-yellow/10'
-                        : 'hover:text-highlight-yellow',
+                        ? 'text-highlight-blue bg-highlight-blue/10'
+                        : 'hover:text-highlight-blue',
                       focusedIndex === index && !isActive
-                        ? 'bg-highlight-yellow/20 text-highlight-yellow'
+                        ? 'bg-highlight-blue/20 text-highlight-blue'
                         : ''
                     )}
                     whileHover={{ x: 5 }}
@@ -211,7 +211,7 @@ export const Navigation: React.FC<NavigationProps> = React.memo(({ className }) 
                     <motion.button
                       key={social.label}
                       onClick={() => handleSocialLinkClick(social.href)}
-                      className="text-gray-600 hover:text-highlight-yellow transition-colors"
+                      className="text-gray-600 hover:text-highlight-blue transition-colors"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       aria-label={social.label}

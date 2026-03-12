@@ -112,7 +112,7 @@ export default function Proyectos() {
                 className={`px-3 py-1 text-sm border-2 border-black rounded-full transition-colors ${
                   activeFilter === null
                     ? 'bg-black text-white'
-                    : 'hover:bg-highlight-yellow hover:text-black'
+                    : 'hover:bg-highlight-blue hover:text-white'
                 }`}
               >
                 Todos
@@ -123,8 +123,8 @@ export default function Proyectos() {
                   onClick={() => setActiveFilter(activeFilter === tech ? null : tech)}
                   className={`px-3 py-1 text-sm border-2 border-black rounded-full transition-colors ${
                     activeFilter === tech
-                      ? 'bg-highlight-yellow text-black'
-                      : 'hover:bg-highlight-yellow hover:text-black'
+                      ? 'bg-highlight-blue text-white'
+                      : 'hover:bg-highlight-blue hover:text-white'
                   }`}
                 >
                   {tech}
@@ -160,7 +160,7 @@ export default function Proyectos() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 border-t-2 border-black bg-highlight-green">
+      <section className="py-20 border-t-2 border-black bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -168,15 +168,15 @@ export default function Proyectos() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-black">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-white">
               ¿Tienes un proyecto en mente?
             </h2>
-            <p className="text-xl text-black mb-8">
+            <p className="text-xl text-gray-300 mb-8">
               Hablemos sobre cómo puedo ayudarte a desarrollar tu próximo proyecto
             </p>
             <Button
               size="lg"
-              highlightColor="pink"
+              highlightColor="blue"
               onClick={() => router.push('/contacto')}
             >
               Iniciar Conversación

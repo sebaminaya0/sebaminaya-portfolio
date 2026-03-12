@@ -65,7 +65,7 @@ export default function Contacto() {
             <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
               <span className="text-black">Ponte en</span>
               <br />
-              <span className="text-highlight-orange">Contacto</span>
+              <span className="text-highlight-blue">Contacto</span>
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Estoy listo para ayudarte a transformar tus ideas en realidad. 
@@ -89,13 +89,7 @@ export default function Contacto() {
                 className="bg-white border-2 border-black rounded-lg p-6 text-center hover:shadow-lg transition-all duration-300 cursor-pointer"
                 onClick={() => info.action !== "#" && window.open(info.action, '_blank')}
               >
-                <div className={`inline-flex p-3 rounded-lg mb-4 ${
-                  info.highlightColor === 'yellow' ? 'bg-highlight-yellow' :
-                  info.highlightColor === 'pink' ? 'bg-highlight-pink' :
-                  info.highlightColor === 'blue' ? 'bg-highlight-blue' :
-                  info.highlightColor === 'green' ? 'bg-highlight-green' :
-                  'bg-highlight-orange'
-                }`}>
+                <div className="inline-flex p-3 rounded-lg mb-4 bg-highlight-blue text-white">
                   {info.icon}
                 </div>
                 <h3 className="font-heading text-lg font-bold mb-2">{info.label}</h3>
@@ -117,35 +111,35 @@ export default function Contacto() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="bg-highlight-yellow rounded-lg p-8">
-                <h2 className="font-heading text-2xl font-bold mb-6 text-black">
+              <div className="bg-highlight-blue rounded-lg p-8">
+                <h2 className="font-heading text-2xl font-bold mb-6 text-white">
                   Envíame un mensaje
                 </h2>
-                
-                <p className="text-black mb-6">
-                  Para una comunicación más rápida y organizada, te recomiendo usar 
-                  mi formulario de contacto oficial. Allí podré darte seguimiento 
+
+                <p className="text-white/90 mb-6">
+                  Para una comunicación más rápida y organizada, te recomiendo usar
+                  mi formulario de contacto oficial. Allí podré darte seguimiento
                   adecuado a tu solicitud.
                 </p>
 
                 <div className="space-y-4 mb-6">
-                  <div className="flex items-center gap-3 text-black">
-                    <CheckCircle className="w-5 h-5 text-black" />
+                  <div className="flex items-center gap-3 text-white">
+                    <CheckCircle className="w-5 h-5 text-white" />
                     <span>Respuesta en menos de 24 horas</span>
                   </div>
-                  <div className="flex items-center gap-3 text-black">
-                    <CheckCircle className="w-5 h-5 text-black" />
+                  <div className="flex items-center gap-3 text-white">
+                    <CheckCircle className="w-5 h-5 text-white" />
                     <span>Atención personalizada</span>
                   </div>
-                  <div className="flex items-center gap-3 text-black">
-                    <CheckCircle className="w-5 h-5 text-black" />
+                  <div className="flex items-center gap-3 text-white">
+                    <CheckCircle className="w-5 h-5 text-white" />
                     <span>Seguimiento garantizado</span>
                   </div>
                 </div>
 
                 <Button
                   size="lg"
-                  highlightColor="pink"
+                  highlightColor="blue"
                   // TODO: Replace with your actual Google Form URL
                 onClick={() => window.open('https://forms.gle/tu-formulario-google', '_blank')}
                   className="w-full"
@@ -170,7 +164,7 @@ export default function Contacto() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {services.map((service, index) => (
                     <div key={index} className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-highlight-pink rounded-full"></div>
+                      <div className="w-2 h-2 bg-highlight-blue rounded-full"></div>
                       <span className="text-gray-700">{service}</span>
                     </div>
                   ))}
@@ -190,7 +184,7 @@ export default function Contacto() {
                         href={social.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center w-12 h-12 bg-black text-white rounded-lg hover:bg-highlight-yellow hover:text-black transition-colors"
+                        className="flex items-center justify-center w-12 h-12 bg-black text-white rounded-lg hover:bg-highlight-blue hover:text-white transition-colors"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         aria-label={social.label}
@@ -248,7 +242,7 @@ export default function Contacto() {
                 viewport={{ once: true }}
                 className="bg-white border-2 border-black rounded-lg p-6"
               >
-                <h3 className="font-heading text-lg font-bold mb-3 text-highlight-pink">
+                <h3 className="font-heading text-lg font-bold mb-3 text-highlight-blue">
                   {faq.question}
                 </h3>
                 <p className="text-gray-700">{faq.answer}</p>
@@ -259,7 +253,7 @@ export default function Contacto() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 border-t-2 border-black bg-highlight-green">
+      <section className="py-20 border-t-2 border-black bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -267,15 +261,15 @@ export default function Contacto() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-black">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-white">
               ¿Listo para empezar tu proyecto?
             </h2>
-            <p className="text-xl text-black mb-8">
+            <p className="text-xl text-gray-300 mb-8">
               El primer paso es simple. Envíame un mensaje y hablemos sobre tus ideas.
             </p>
             <Button
               size="lg"
-              highlightColor="pink"
+              highlightColor="blue"
               // TODO: Replace with your actual Google Form URL
             onClick={() => window.open('https://forms.gle/tu-formulario-google', '_blank')}
             >

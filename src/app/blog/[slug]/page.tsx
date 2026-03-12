@@ -31,7 +31,7 @@ export default async function BlogPost({ params }: Props) {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <Link
           href="/blog"
-          className="text-sm text-gray-600 hover:text-highlight-yellow transition-colors mb-8 inline-block"
+          className="text-sm text-gray-600 hover:text-highlight-blue transition-colors mb-8 inline-block"
         >
           ← Volver al blog
         </Link>

@@ -75,12 +75,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = React.memo(({
         {technologies.map((tech, index) => (
           <span
             key={index}
-            className={cn(
-              'px-3 py-1 text-sm font-medium rounded-full border',
-              getHighlightColorClasses(highlightColor, 'bgLight'),
-              getHighlightColorClasses(highlightColor, 'text'),
-              getHighlightColorClasses(highlightColor, 'border')
-            )}
+            className="px-3 py-1 text-sm font-medium rounded-full bg-gray-100 text-gray-800 border border-gray-300"
           >
             {tech}
           </span>

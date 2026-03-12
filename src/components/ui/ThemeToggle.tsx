@@ -25,7 +25,7 @@ export function ThemeToggle() {
     <button
       onClick={toggle}
       aria-label={theme === 'light' ? 'Activar modo oscuro' : 'Activar modo claro'}
-      className="flex items-center justify-center w-9 h-9 rounded-md border-2 border-black hover:bg-highlight-yellow transition-colors"
+      className="flex items-center justify-center w-9 h-9 rounded-md border-2 border-black hover:bg-highlight-blue hover:text-white transition-colors"
     >
       {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
     </button>

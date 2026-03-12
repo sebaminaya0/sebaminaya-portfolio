@@ -23,7 +23,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <p className="font-heading text-2xl font-bold text-highlight-yellow mb-2">SM</p>
+            <p className="font-heading text-2xl font-bold text-highlight-blue mb-2">SM</p>
             <p className="text-sm text-gray-600">Desarrollador & Analista de Datos</p>
             <p className="text-sm text-gray-600">Lima, Perú</p>
           </div>
@@ -35,7 +35,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-700 hover:text-highlight-yellow transition-colors"
+                    className="text-gray-700 hover:text-highlight-blue transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -54,7 +54,7 @@ export function Footer() {
                   target={href.startsWith('mailto') ? undefined : '_blank'}
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="flex items-center justify-center w-10 h-10 bg-black text-white rounded-lg hover:bg-highlight-yellow hover:text-black transition-colors"
+                  className="flex items-center justify-center w-10 h-10 bg-black text-white rounded-lg hover:bg-highlight-blue hover:text-white transition-colors"
                 >
                   <Icon className="w-5 h-5" />
                 </a>
