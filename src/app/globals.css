@@ -93,6 +93,9 @@ body {
 [data-theme="dark"] .text-gray-600 { color: #9ca3af; }
 [data-theme="dark"] .text-gray-500 { color: #6b7280; }
 
+.text-gray-800 { color: #000000; }
+[data-theme="dark"] .text-gray-800 { color: #ffffff; }
+
 /* bg-black elements (social icon buttons) */
 [data-theme="dark"] .bg-black {
   background-color: #2a2a2a;
